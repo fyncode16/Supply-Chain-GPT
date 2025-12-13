@@ -633,7 +633,7 @@ def main():
     
     # Initialize system
     system = SupplyChainIntelligence(
-        data_file="/mnt/user-data/uploads/1765627423324_supply_chain_data_csv.xlsx",
+        data_file="supply_chain_data.csv.xlsx",
         use_ai=True  # Set to False to disable AI
     )
     
