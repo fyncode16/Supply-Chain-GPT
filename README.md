@@ -1,4 +1,4 @@
-# 🚀 Supply Chain Intelligence System
+#  Supply Chain Intelligence System
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -11,18 +11,18 @@ An intelligent supply chain management system combining **RAG (Retrieval-Augment
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🔍 **Smart Document Search** - Find policies and procedures instantly using RAG
-- 🤖 **FREE AI Answers** - Natural language responses using Google's Flan-T5
-- 📈 **Demand Forecasting** - Predict future demand with 95% confidence intervals
-- ⚠️ **Risk Analysis** - Automated risk scoring and recommendations
-- 📊 **Visual Analytics** - Professional charts and reports
-- 💰 **Zero Cost** - No API fees, runs completely locally
+-  **Smart Document Search** - Find policies and procedures instantly using RAG
+-  **FREE AI Answers** - Natural language responses using Google's Flan-T5
+-  **Demand Forecasting** - Predict future demand with 95% confidence intervals
+-  **Risk Analysis** - Automated risk scoring and recommendations
+-  **Visual Analytics** - Professional charts and reports
+-  **Zero Cost** - No API fees, runs completely locally
 
 ---
 
-## 🎯 Use Cases
+##  Use Cases
 
 - **Inventory Management** - Optimize stock levels and reorder points
 - **Supplier Analysis** - Evaluate supplier performance and risks
@@ -32,7 +32,7 @@ An intelligent supply chain management system combining **RAG (Retrieval-Augment
 
 ---
 
-## 📊 Demo
+##  Demo
 
 ```python
 from supply_chain_intelligence import SupplyChainIntelligence
@@ -55,7 +55,7 @@ risks = system.analyze_risks(top_n=20)
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -89,7 +89,7 @@ risks = system.analyze_risks(top_n=20)
 
 ---
 
-## 📖 Usage
+##  Usage
 
 ### Basic Query
 
@@ -135,7 +135,7 @@ risk_df.to_csv('risk_analysis.csv', index=False)
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 supply-chain-intelligence/
@@ -157,9 +157,8 @@ supply-chain-intelligence/
     └── FAQ.md
 ```
 
----
 
-## 🧠 How It Works
+##  How It Works
 
 ### 1. Document Search (RAG)
 
@@ -203,7 +202,7 @@ Product Data → Risk Scoring → Automated Recommendations
 
 ---
 
-## 📊 Sample Output
+##  Sample Output
 
 ### Query Example
 
@@ -242,15 +241,15 @@ Recommendations:
 
 ---
 
-## 🎓 For Students
+##  For Students
 
 This project is perfect for:
 
-- ✅ **Academic projects** - Demonstrates AI, data analysis, and software engineering
-- ✅ **Portfolio building** - Shows real-world problem-solving skills
-- ✅ **Capstone projects** - Complete end-to-end system
-- ✅ **Research** - Foundation for supply chain ML research
-- ✅ **Learning** - Clean, well-documented code
+-  **Academic projects** - Demonstrates AI, data analysis, and software engineering
+-  **Portfolio building** - Shows real-world problem-solving skills
+-  **Capstone projects** - Complete end-to-end system
+-  **Research** - Foundation for supply chain ML research
+-  **Learning** - Clean, well-documented code
 
 ### Why This Stands Out
 
@@ -262,7 +261,7 @@ This project is perfect for:
 
 ---
 
-## 🔧 Configuration
+##  Configuration
 
 Edit `Config` class in `supply_chain_intelligence.py`:
 
@@ -277,11 +276,9 @@ class Config:
     # Forecasting
     FORECAST_DAYS = 30  # Forecast horizon
     FORECAST_HISTORY_DAYS = 90  # Historical data to use
-```
 
----
 
-## 📈 Performance
+##  Performance
 
 | Metric | Value |
 |--------|-------|
@@ -293,7 +290,7 @@ class Config:
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions welcome! Please follow these steps:
 
@@ -305,29 +302,14 @@ Contributions welcome! Please follow these steps:
 
 ---
 
-## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Google** - For the free Flan-T5 model
 - **Hugging Face** - For the transformers library
 - **Open Source Community** - For amazing tools and libraries
 
----
 
-## 📞 Support
-
-- 📧 Email: your.email@example.com
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/supply-chain-intelligence/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/yourusername/supply-chain-intelligence/discussions)
-
----
-
-## 🗺️ Roadmap
 
 - [ ] Web interface (Streamlit dashboard)
 - [ ] API endpoints (FastAPI)
@@ -338,10 +320,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## ⭐ Show Your Support
 
-If this project helped you, please give it a ⭐ star!
-
----
-
-**Made with ❤️ for the supply chain community**
