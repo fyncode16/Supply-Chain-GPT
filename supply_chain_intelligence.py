@@ -2,9 +2,8 @@
 Supply Chain Intelligence System with AI-Powered Analysis
 =========================================================
 
-Author: Your Name
-Date: December 2024
-License: MIT
+Author: Souvik Sattwik Agasti
+Date: December 2025
 
 Description:
     A complete supply chain management system that combines:
@@ -14,14 +13,14 @@ Description:
     - FREE AI-powered natural language understanding (Flan-T5)
 
 Features:
-    ✓ 100% Free - No API costs
-    ✓ Works offline after initial model download
-    ✓ Natural language query answering
-    ✓ Demand forecasting for 30+ days
-    ✓ Automated risk assessment
-    ✓ Professional visualizations
+    - 100% Free - No API costs
+    - Works offline after initial model download
+    - Natural language query answering
+    - Demand forecasting for 30+ days
+    - Automated risk assessment
+    - Professional visualizations
 
-GitHub: https://github.com/yourusername/supply-chain-intelligence
+GitHub: https://github.com/fyncode16/supply-chain-intelligence
 """
 
 import pandas as pd
@@ -38,7 +37,7 @@ try:
     AI_AVAILABLE = True
 except ImportError:
     AI_AVAILABLE = False
-    print("⚠️  AI features disabled. Install with: pip install transformers torch")
+    print(" AI features disabled. Install with: pip install transformers torch")
 
 warnings.filterwarnings('ignore')
 
@@ -89,7 +88,7 @@ class DocumentSearchEngine:
         self.doc_freq = Counter()
         self.doc_terms = []
         
-        print("📚 Indexing documents...")
+        print("Indexing documents...")
         self._build_index()
         print(f"✓ Indexed {len(documents)} documents with {len(self.vocab)} unique terms")
     
@@ -179,8 +178,8 @@ class AIAnswerGenerator:
                 "pip install transformers torch"
             )
         
-        print(f"🤖 Loading FREE AI model ({Config.AI_MODEL})...")
-        print("⏳ First run may take 1-2 minutes to download model...")
+        print(f"Loading FREE AI model ({Config.AI_MODEL})...")
+        print("First run may take 1-2 minutes to download model...")
         
         try:
             self.llm = pipeline(
@@ -191,7 +190,7 @@ class AIAnswerGenerator:
             print("✓ AI model loaded successfully!")
             
         except Exception as e:
-            print(f"❌ Error loading AI model: {e}")
+            print(f"Error loading AI model: {e}")
             raise
     
     def generate_answer(self, query, context_documents):
@@ -407,16 +406,16 @@ class SupplyChainIntelligence:
             use_ai (bool): Whether to use AI for answer generation
         """
         print("="*80)
-        print("🚀 SUPPLY CHAIN INTELLIGENCE SYSTEM")
+        print("SUPPLY CHAIN INTELLIGENCE SYSTEM")
         print("="*80)
         
         # Load data
-        print("\n📊 Loading data...")
+        print("\n Loading data...")
         self.df = pd.read_excel(data_file)
         print(f"✓ Loaded {len(self.df)} products")
         
         # Create documents
-        print("\n📄 Creating knowledge base...")
+        print("\n Creating knowledge base...")
         self.documents = self._create_documents()
         
         # Initialize search engine
@@ -428,9 +427,9 @@ class SupplyChainIntelligence:
             try:
                 self.ai = AIAnswerGenerator()
             except Exception as e:
-                print(f"⚠️  AI disabled: {e}")
+                print(f"  AI disabled: {e}")
         elif use_ai and not AI_AVAILABLE:
-            print("⚠️  AI requested but transformers not installed")
+            print(" AI requested but transformers not installed")
         
         # Initialize forecaster
         self.forecaster = DemandForecaster()
@@ -438,7 +437,7 @@ class SupplyChainIntelligence:
         # Initialize risk analyzer
         self.risk_analyzer = RiskAnalyzer()
         
-        print("\n✅ System ready!")
+        print("\n System ready!")
     
     def _create_documents(self):
         """Create searchable documents from data and policies"""
@@ -521,7 +520,7 @@ Shipping: {row['Transportation modes']} via {row['Routes']}
         Returns:
             dict: Answer with context and metadata
         """
-        print(f"\n❓ Question: {question}")
+        print(f"\n Question: {question}")
         print("-"*80)
         
         # Search for relevant documents
@@ -558,7 +557,7 @@ Shipping: {row['Transportation modes']} via {row['Routes']}
         Returns:
             dict: Forecast results
         """
-        print(f"\n📈 Generating forecast for {sku_id}...")
+        print(f"\n Generating forecast for {sku_id}...")
         
         # Get product data
         product = self.df[self.df['SKU'] == sku_id]
@@ -574,7 +573,7 @@ Shipping: {row['Transportation modes']} via {row['Routes']}
         # Generate forecast
         forecast = self.forecaster.forecast(hist_data, sku_id, periods=days)
         
-        print(f"✓ Forecast complete")
+        print(f" Forecast complete")
         print(f"  Average: {forecast['metrics']['forecast_avg']:.1f} units/day")
         print(f"  Trend: {forecast['metrics']['trend']}")
         print(f"  Action: {forecast['recommendations']['action']}")
@@ -604,7 +603,7 @@ Shipping: {row['Transportation modes']} via {row['Routes']}
         Returns:
             DataFrame: Risk analysis results
         """
-        print(f"\n⚠️  Analyzing risks for top {top_n} products...")
+        print(f"\n Analyzing risks for top {top_n} products...")
         
         risks = []
         for _, product in self.df.head(top_n).iterrows():
@@ -638,7 +637,7 @@ def main():
     )
     
     print("\n\n" + "="*80)
-    print("🎯 RUNNING DEMO QUERIES")
+    print(" RUNNING DEMO QUERIES")
     print("="*80)
     
     # Demo 1: Policy question
@@ -654,7 +653,7 @@ def main():
     risks = system.analyze_risks(top_n=15)
     
     print("\n\n" + "="*80)
-    print("✅ DEMO COMPLETE")
+    print(" DEMO COMPLETE")
     print("="*80)
     
     return system
