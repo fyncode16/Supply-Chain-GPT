@@ -48,15 +48,6 @@ risks = system.analyze_risks(top_n=20)
 # → Returns risk assessment for products
 ```
 
----
-
-##  Quick Start
-
-### Prerequisites
-
-- Python 3.8 or higher
-- 4GB RAM minimum (8GB recommended)
-- 2GB free disk space
 
 ### Installation
 
