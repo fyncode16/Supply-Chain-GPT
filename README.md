@@ -1,10 +1,5 @@
 #  Supply Chain Intelligence System
 
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![AI Powered](https://img.shields.io/badge/AI-Powered-green.svg)](https://huggingface.co/google/flan-t5-base)
-[![Free](https://img.shields.io/badge/Cost-100%25%20Free-success.svg)]()
-
 An intelligent supply chain management system combining **RAG (Retrieval-Augmented Generation)**, **AI-powered natural language understanding**, and **demand forecasting**.
 
 > **100% Free** | No API costs | Works offline | Perfect for student projects
