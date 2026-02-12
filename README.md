@@ -236,16 +236,6 @@ Recommendations:
 
 ---
 
-##  For Students
-
-This project is perfect for:
-
--  **Academic projects** - Demonstrates AI, data analysis, and software engineering
--  **Portfolio building** - Shows real-world problem-solving skills
--  **Capstone projects** - Complete end-to-end system
--  **Research** - Foundation for supply chain ML research
--  **Learning** - Clean, well-documented code
-
 ### Why This Stands Out
 
 1. **100% Free** - No API costs or subscriptions
